@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #6d6b6b; /* Dark header background */
+    padding: 5px;
+}
+
+header a {
+    color: white;
+}
+
+header li:first-child {
+	margin: 0 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; 
+}
+
+article {
+    flex: 2;
+    overflow-y: auto; 
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto; /* Enables scrolling */
+}
+
+.logo {
+    font-size: 2em;
+    margin-right: 0.5em;
+    padding: 0.3em 0.5em;
+    background: linear-gradient(145deg, #ff8a00, #e52e71);
+    border-radius: 12px;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),
+        0 6px 20px rgba(0, 0, 0, 0.15),
+        inset 0 1px 1px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transform: perspective(500px) rotateX(10deg);
+    transition: all 0.3s ease;
+    display: inline-block;
+
+  }
+
+
+  margin-right: 20px; 
+
+overflow-y: auto; /* Enables vertical scrolling if needed */
+
+min-height: 100vh; 
+margin: 0;
+
+
+font-size: 100px;             /* Set a large font size */
+color: #4CAF50;               /* Text color */
+background-color: #f0f0f0;    /* Optional background */
+width: 120px;                 /* Set width for a background square */
+height: 120px;                /* Set height for a background square */
+text-align: center;           /* Center the text */
+line-height: 120px;           /* Vertically center the text */
+border-radius: 10px;          /* Optional: rounded corners */

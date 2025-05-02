@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="behavior.js"></script>   
+    <link href="styles1.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>About Me</title>
+  </head>  
+  <body class="works_on_smartphone">
+    <header>
+        <!-- Social Media Share Button -->
+        <div class="right">
+          <a href="https://twitter.com/intent/tweet?url=http://13.38.111.85" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/twitter.png" alt="Twitter" >
+          </a>
+      
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://13.38.111.85" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/facebook.png" alt="Facebook" >
+          </a>
+        </div>       
+        <div class = "nav-menu">  
+          <ul>
+              <li><img src = "https://raw.githubusercontent.com/nicproghub/WebIcons/refs/heads/main/Morgan%20(1).png" alt="mylogo" class = "logo"></li>           
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="tweets.html">Tweets</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>  
+        </div>           
+    </header>
+
+    <main>
+        <article class="studio-style">
+            <!-- Hero Section, slice in -->
+                <h1> My Story </h1>
+                <h2 class ="color-change"> A journey powered by curiosity and code </h2>
+
+           <hr class="custom-line">
+
+             <!-- Tab Section  -->
+            <div class="tabs">
+                <div id=1 class="tab-content">
+                    <h3>A Quant’s Hidden Passion</h3>
+                    <p>I began my professional life in the fast-paced world of finance, thriving as a quantitative analyst. But beyond numbers and models, I always had a creative itch — a curiosity for how things work behind the screen. </p>
+                    <p>Back in high school, I remember hand-coding my own HTML pages, experimenting with tables and colors before I even understood what "front-end" meant. That spark faded as my career took off… until recently.</p>
+
+                    <div class="tab-navigation">
+                        <button class="nav-btn next" onclick="showTab(2, event)">
+                            Life, Change & New Chapters →
+                        </button>
+                    </div>
+                </div>
+                
+                <div id=2 class="tab-content hidden">
+                    <h3>Life, Change & New Chapters</h3>
+                    <p>After relocating to Melbourne with my family in 2023, I decided to take a break from my career.</p>
+                    <p>I enrolled in a Master of Data Science — and that’s where my dream clicked again. </p>
+                    <p>A subject call "Cloud-Based Web Applications" reignited the fire I had as a teenager. </p>
+                    <p>I didn’t just want to analyze data anymore. I wanted to build things. Useful things. Beautiful things. From end to end.</p>
+    
+                    <div class="tab-navigation">
+                        <button class="nav-btn prev" onclick="showTab(1, event)">
+                            ← A Quant’s Hidden Passion
+                        </button>
+                        <button class="nav-btn next" onclick="showTab(3, event)">
+                            My Journey →
+                        </button>
+                    </div>
+                </div>
+            
+                <div id=3 class="tab-content hidden">
+                    <h3>My Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>2023 - Present </h3>
+                            <p>🎓 MSc Data Science</p>
+                            <p class="company">La Trobe Universtiy</p>
+                            <ul>
+                                <li>Major in Big Data and Cloud Computing </li>
+                                <li>Provost’s Commendation Award (2024) </li>
+                            </ul>
+            
+                        </div>
+                        <div class="timeline-item">
+                            <h3>2013 - 2023 </h3>
+                            <p> 📊 Quantitative Analyst </p>
+                            <p class="company">Golden Full Asset Management Limited</p>
+                            <ul>
+                                <li>Developed systematic trading algorithms </li>
+                                <li>Python/Pandas expertise </li>
+                            </ul>                           
+                        </div>
+                        <div class="timeline-item">
+                            <h3>2006 - 2013 </h3>
+                            <p> 📈 Quantitative Trader </p>
+                            <p class="company"> Argus Capital Management Pty Ltd </p>
+                            <ul>
+                                <li>Developed automatic trading tools in C# </li>
+                                <li>C# and VBA expertise </li>
+                            </ul>                           
+                        </div>
+                        <div class="timeline-item">
+                            <h3>2003 - 2006 </h3>
+                            <p> 🏛 BCs Business Systems </p>
+                            <p class="company"> Monash University </p>
+                            <ul>
+                                <li> Minor in Computer Science </li>
+
+                            </ul>                           
+                        </div>
+                    </div>
+
+                    <div class="tab-navigation">
+                        <button class="nav-btn prev" onclick="showTab(2, event)">
+                            ← Change of Life
+                        </button>
+                        <button class="nav-btn next" onclick="showTab(4, event)">
+                            My Skills →
+                        </button>
+                    </div>
+
+                </div>
+
+                <div id= 4 class="tab-content hidden">
+                    <h3>✨ What I Bring</h3>
+                    <ul class ="dot">
+                        <li>Strong analytical foundation from Quant</li>
+                        <li>Experience with Python, SQL, C#, HTML/CSS, JavaScript</li>
+                        <li>Team player and quick learner</li>
+                        <li>Currently building real-world projects to sharpen my skills</li>
+                    </ul>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3>Frontend</h3>
+                            <p>JavaScript, HTML/CSS, React</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Backend</h3>
+                            <p>Python, Node.js</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Database</h3>
+                            <p>PostgreSQL, MySQL, MSSQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Tools</h3>
+                            <p>Git, Docker, Power BI</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Programming</h3>
+                            <p>Git, Docker, Power BI, MATLAB</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-navigation">
+                        <button class="nav-btn prev" onclick="showTab(3, event)">
+                            ← My Journey
+                        </button>
+                        <button class="nav-btn next" onclick="showTab(1, event)">
+                            A Quant’s Hidden Passion →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+          </article>
+
+        <aside>
+          <div id="disqus_thread"></div>
+          <script>
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://nicoleblog-2.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p> Made by Xiao Jun Lin for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
+    </footer>    
+  </body>
+</html>

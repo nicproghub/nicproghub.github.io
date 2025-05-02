@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="behavior.js"></script>  
+    <link href="style1.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Contacts</title>
+  </head>
+  <body class="works_on_smartphone">
+    <header>
+        <!-- Social Media Share Button -->
+        <div class="right">
+          <a href="https://twitter.com/intent/tweet?url=http://13.38.111.85" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/twitter.png" alt="Twitter" >
+          </a>
+      
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://13.38.111.85" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/facebook.png" alt="Facebook">
+          </a>
+        </div>       
+        <div class = "nav-menu">  
+            <ul>
+                <li><img src = "https://raw.githubusercontent.com/nicproghub/WebIcons/refs/heads/main/Morgan%20(1).png" alt="mylogo" class = "logo"></li>           
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>   
+        </div>           
+    </header>
+
+    <main>
+        <article class="studio-style">
+            
+            <div class="contact-page">
+                <div class="contact-header">
+                  <h1>GET IN TOUCH</h1>
+                  <div class="header-decoration">
+                    <div class="line"></div>
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                  </div>
+                  <p class="tagline">Open and honest communication is what I value most.</p>
+                </div>
+              
+                <div class="contact-content">
+                  <div class="contact-methods">
+                    <!-- Email -->
+                    <div class="contact-card">
+                      <h2>↗</h2>
+                      <h3>Email</h3>
+                      <a href="mailto:nicolam810@hotmail.com"><img src="https://www.clker.com/cliparts/W/j/m/3/u/z/email-icon-md.png" alt="EMail" class = "contact-icon"></a>
+                    </div>
+              
+                    <!-- Social -->
+                    <div class="contact-card">
+                      <h2>↗</h2>
+                      <h3>Linkedin</h3>
+                      <a href="https://www.linkedin.com/in/nicolelin2023/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class = "contact-icon"></a>
+                    </div>
+
+                    <!-- Github -->
+                    <div class="contact-card">
+                        <h2>↗</h2>
+                        <h3>Github</h3>
+                        <a href="https://github.com/nicproghub"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github.png" alt="Github"  class = "contact-icon"></a>
+                    </div>
+                  </div>
+              
+                  <!-- Contact Form -->
+                  <div class="form-group">
+                    <form class="contact-form" action="mailto:nicolam810@hotmail.com" method="POST" enctype="text/plain">
+                        <h2>Send a Message 📬</h2>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                  </div>
+                </div>
+              
+            </div>
+
+        </article>
+
+        <aside>
+
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://nicoleblog-2.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p> Made by Xiao Jun Lin for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
+    </footer>    
+  </body>
+</html>

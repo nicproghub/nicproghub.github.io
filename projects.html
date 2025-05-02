@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="behavior.js"></script>  
+    <link href="style1.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Projects</title>
+  </head>
+  <body class="works_on_smartphone">
+    <header>
+        <!-- Social Media Share Button -->
+        <div class="right">
+          <a href="https://twitter.com/intent/tweet?url=http://13.38.111.85" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/twitter.png" alt="Twitter" >
+          </a>
+      
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://13.38.111.85" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/facebook.png" alt="Facebook">
+          </a>
+        </div>       
+        <div class = "nav-menu">  
+            <ul>
+                <li><img src = "https://raw.githubusercontent.com/nicproghub/WebIcons/refs/heads/main/Morgan%20(1).png" alt="mylogo" class = "logo"></li>           
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>   
+        </div>           
+    </header>
+
+    <main>
+        <article class="studio-style">
+            <h1 class ="color-change">Things I've Built</h1>  
+  
+            <div class="product-grid">
+                <!-- Project 1 -->
+                <div class="projects-card">
+                    <div class="card-header">
+                        <h3>Customer Info System</h3>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Full-stack web app for managing customer contact information with CRUD operations.</p>
+                        <a href="https://github.com/nicproghub/Customer-Info-System" target="_blank">
+                          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github.png" alt="Home logo" width="40" height="40">
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Project 2 -->
+                <div class="projects-card">
+                    <div class="card-header">
+                        <h3>Life Expectancy Prediction</h3>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>pandas</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Machine learning model with 94% accuracy predicting life expectancy.</p>
+                        <a href="https://github.com/nicproghub/Life-Expectancy" target="_blank">
+                          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github.png" alt="Home logo" width="40" height="40">
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Project 3 -->
+                <div class="projects-card">
+                    <div class="card-header" >
+                        <h3>Pair Trading Strategy</h3>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Modelling</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Data-driven trading strategy combining financial analysis with ML.</p>
+                        <a href="https://github.com/nicproghub/Pair_TFModel_Python" target="_blank">
+                          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github.png" alt="Home logo" width="40" height="40">
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Project 4 -->
+                <div class="projects-card">
+                    <div class="card-header">
+                        <h3>Department Store Database</h3>
+                        <div class="tech-tags">
+                            <span>SQL</span>
+                            <span>Database Design</span>
+                            <span>Indexing</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Relational database system for efficient retail data management.</p>
+                        <a href="https://github.com/nicproghub/DB-design-SQL" target="_blank">
+                          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github.png" alt="Home logo" width="40" height="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+              
+
+        </article>
+
+        <aside>
+
+          <div id="disqus_thread"></div>
+          <script>
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://nicoleblog-2.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p> Made by Xiao Jun Lin for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
+    </footer>    
+  </body>
+</html>
