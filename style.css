@@ -1,24 +1,7 @@
+/* Main Structure */
 body {
     display: flex;
     flex-direction: column;
-}
-
-header {
-    background-color: #6d6b6b; /* Dark header background */
-    padding: 5px;
-}
-
-header a {
-    color: white;
-}
-
-header li:first-child {
-	margin: 0 20px;
-}
-
-.nav-menu {
-    display: flex;
-    align-items: center;
 }
 
 main {
@@ -27,47 +10,482 @@ main {
     flex: auto; 
 }
 
+header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header .right {
+    margin-left: auto;
+    order:2;
+    width: 20px;
+    height: 20px;
+}
+
+header .nav-menu {
+    order: 1;
+}
+
+h1 {
+  padding: 20px;  
+  text-align: center;  
+}
+header li {
+	margin: 0 15px;
+}
+
+
+aside {
+    flex: 1;
+    overflow-y: auto; /* Enables scrolling */  
+
+}
+
 article {
     flex: 2;
     overflow-y: auto; 
 }
 
-aside {
-    flex: 1;
-    overflow-y: auto; /* Enables scrolling */
+.logo {
+    width: 60px;
+    height: 60px;
 }
 
-.logo {
-    font-size: 2em;
-    margin-right: 0.5em;
-    padding: 0.3em 0.5em;
-    background: linear-gradient(145deg, #ff8a00, #e52e71);
-    border-radius: 12px;
-    box-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.2),
-        0 6px 20px rgba(0, 0, 0, 0.15),
-        inset 0 1px 1px rgba(255, 255, 255, 0.3);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    transform: perspective(500px) rotateX(10deg);
+.schoollogo {
+    width: 100px;
+    height: 40px;
+}
+
+
+/* Studio Style */
+.studio-style {
+    font-family: sans-serif;
+    color: #2a2a2a;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+/* Hero Section */ 
+.hero-banner {
+    display: flex;
+    text-align: center;
+    margin-bottom: 60px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;    
+}
+
+
+.hero-banner h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* Grid-Card Section */
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    animation: slideIn 0.6s ease forwards;
+    opacity: 0; 
+}
+
+.product-card {
+    border: 1px solid #eaeaea;
+    padding: 30px;
+    transition: transform 0.3s ease;
+
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.product-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.shop-btn {
+    color: #2a2a2a;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #2a2a2a;
+    padding-bottom: 3px;
     transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    color: #999;
+    border-bottom-color: #999;
+}
+
+/* About Tab Section */
+
+.dot {
+    list-style-type: disc; 
+    padding-left: 20px;   
+}
+
+
+/* Tab container with blurred background */
+.tabs {
+    justify-content: center;
+    position: relative; 
+    border-radius: 25px; 
+    overflow: hidden; /* Contains the blurred edges */
+    min-height: 500px; 
+}
+
+/* Blurred background layer */
+.tabs::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('https://raw.githubusercontent.com/nicproghub/WebIcons/refs/heads/main/brandi-redd-aJTiW00qqtI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Adjust blur intensity */
+    z-index: 0; 
+}
+
+ 
+.tab-content {
+    position: relative;
+    padding: 30px;
+    
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+.tab-navigation {
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    position: relative;
+}
+
+
+.nav-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    background:transparent;
+}
+
+.nav-btn.next {
+    margin-left: auto; /* Pushes to right */
+}
+
+
+.nav-btn:hover {
+    transform: none; 
+    box-shadow: none;
+    text-decoration: underline;
+    text-decoration-color: #2a2a2a; 
+}
+
+
+/* Timeline  */
+.timeline {
+    border-left: 2px solid #2a2a2a;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item h3 {
+    font-size: 1.2rem;
+    background-color: white;
+    position: relative;
+    left: -35px;
     display: inline-block;
+    padding-right: 10px;
+}
 
-  }
+.company {
+    color: #666666cf;
+    font-style: italic;
+    margin: 5px 0 15px;
+    font-weight: 500;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.timeline-content li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    border: 1px solid #eee;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
 
 
-  margin-right: 20px; 
+@keyframes colorChange {
+    0% {
+        color: rgba(251, 248, 248, 0.386);
+    }
+    25% {
+        color: rgba(14, 13, 13, 0.201);
+    }
+    50% {
+        color: rgba(63, 63, 64, 0.473);
+    }
+    75% {
+        color: #5f5c5a;
+    }
+    100% {
+        color: #3A3A3A
+    }
+}
 
-overflow-y: auto; /* Enables vertical scrolling if needed */
+.color-change {
+    animation: colorChange 5s infinite;
+}
 
-min-height: 100vh; 
-margin: 0;
+.twitter-tweet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px;  
+    border-radius: 25px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);  
+}
+
+/* Flip-tab for tweets page */
+.flip-tab {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    position: relative; 
+    border-radius: 25px; 
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+/* Projects Section */
+.projects-card {
+    
+    padding: 30px;
+    transition: transform 0.3s ease;
+    background-color: #F4E6DE;
+}
+
+.projects-card:hover {
+    transform: translateY(-5px);
+}
+
+.projects-card:nth-child(1), 
+.projects-card:nth-child(4) {
+    background-color: #F4E6DE;
+} 
+
+.projects-card:nth-child(2), 
+.projects-card:nth-child(3) {
+    background-color: #E4ECEC;
+} 
+
+.card-header h3{
+    color:#3A3A3A
+}
+
+.card-body{
+    padding: 20px;
+
+}
+
+.tech-tags span {
+    background-color: #c2c3c4;
+    color: #181818;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 0.85em;
+}
+  
+.card-body a img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+  
+.card-body a img:hover {
+    transform: rotate(10deg) scale(1.1);
+    filter: drop-shadow(0 0 4px #95979a);
+}
 
 
-font-size: 100px;             /* Set a large font size */
-color: #4CAF50;               /* Text color */
-background-color: #f0f0f0;    /* Optional background */
-width: 120px;                 /* Set width for a background square */
-height: 120px;                /* Set height for a background square */
-text-align: center;           /* Center the text */
-line-height: 120px;           /* Vertically center the text */
-border-radius: 10px;          /* Optional: rounded corners */
+/* Contact page - Base Styles */
+.contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+  
+/* Header */
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+  
+.contact-header h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+}
+  
+.header-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+  
+.line {
+    width: 80px;
+    height: 2px;
+    background: #2a2a2a;
+}
+  
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1DA1F2;
+    margin: 0 15px;
+}
+  
+.tagline {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+  
+/* Contact Methods */
+.contact-methods {
+    margin-bottom: 60px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+}
+  
+.contact-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+  
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+  
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+  
+.contact-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+}
+
+  
+/* Contact Form */
+  
+.form-group {
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    display: flex;
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #2b682e;
+}
