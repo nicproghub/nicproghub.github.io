@@ -8,19 +8,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       });
 
-    function showTab(tabId) {
-        const contents = document.querySelectorAll(".tab-content");
-        const buttons = document.querySelectorAll(".tab-button");
-        // Initialized, add all tabs to "hidden" class 
-        contents.forEach(content => content.classList.add("hidden"));
-        // empty 'active' button class
-        buttons.forEach(button => button.classList.remove("active"));
-        // Remove selected tab from "hiden"
-        document.getElementById(tabId).classList.remove("hidden");
-        // Selected button added to 'active' class
-        event.currentTarget.classList.add("active");
-    }
+    // Show first tab by default
+    showTab(1);
       
 });
 
+
+// Make showTab available globally
+function showTab(tabId, event) {
+    const contents = document.querySelectorAll(".tab-content");
+    const buttons = document.querySelectorAll(".tab-button");
+    
+    // Hide all tab contents
+    contents.forEach(content => content.classList.add("hidden"));
+    
+    // Remove active class from all buttons
+    buttons.forEach(button => button.classList.remove("active"));
+    
+    // Show selected tab
+    const tabToShow = document.getElementById(tabId);
+    if (tabToShow) {
+        tabToShow.classList.remove("hidden");
+    }
+    
+    // Add active class to clicked button
+    if (event) {
+        event.target.classList.add("active");
+    }
+}
 
